@@ -177,7 +177,7 @@ def sum(tree: Tree[Int]): Int = tree match {
 
 ## Nim 
 
-#### Flexible Call Syntax
+#### Flexible Call Syntax (u/xigoi)
 ```nim
 # All of these mean the same thing
 foo(bar)
@@ -198,13 +198,13 @@ foo(bar):
   baz
 ```
 
-#### Style Insensitivity
+#### Style Insensitivity (u/xigoi)
 
 All of these are the same: `fooBarBaz`, `foo_bar_baz`, `foobarbaz`, `fOObA_Rb_aZ`. However, they're distinct from `FooBarBaz`.
 
 This means that you can use the same style across your codebase even if your modules use a different style.
 
-#### Pragmas
+#### Pragmas (u/xigoi)
 
 Pragmas remove the need for keywords like inline and you can easily define your own. They can be used in many different places.
 ```nim
@@ -212,7 +212,7 @@ proc double[T](x: T): T {.inline, noSideEffects.} =
   2 * x
 ```
 
-#### Result Variable
+#### Result Variable (u/xigoi)
 
 Every procedure automatically defines a variable called result, which is initialized to the default value and automatically returned at the end unless you explicitly return something else. This allows for succint code like this:
 
